@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rust + Raylib + Wasm</title>
+    <script src="target/wasm32-unknown-emscripten/release/gameoflife.js"></script>
+  </head>
+  <body>
+    <canvas id ="canvas" width="1600", height="800""></canvas>
+     <script>
+    Module.canvas = document.getElementById('canvas')
+    </script>
+  </body>
+</html>
+
